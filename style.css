@@ -29,3 +29,7 @@ body{
   text-align: center;
   border: 1px solid #232323;
 }
+button.button1{
+  font-size: 4.266vw !important;
+  font-size: 40px;
+}
