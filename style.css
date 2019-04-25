@@ -7,13 +7,14 @@ body{
 .button{
   color:#FFF;
   text-decoration: none;
-  
+  font-size: 4.266vh !important;
   font-size: 40px;
   padding: 10px;
   display: inline-block;
   width: 50%;
 }
 .daimei{
+  font-size: 3.566vh !important;
   margin-top: 20px;
   margin-bottom: 20px;
   color: #FFF;
