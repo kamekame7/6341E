@@ -1,0 +1,23 @@
+body{
+
+  text-align: center;
+  background-color: #F1F9E0;
+
+}
+.button{
+  color:#FFF;
+  text-decoration: none;
+  background-color: blue;
+  font-size: 30px;
+  padding: 10px;
+  display: inline-block;
+  width: 50%;
+}
+.daimei{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #FFF;
+  width:80%;
+  font-size:40px;
+  background-color: #69E9D1;
+}
