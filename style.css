@@ -33,7 +33,6 @@ body{
   border-width: 3px;
   border-color: #FFF;
   border-radius: 10px
-
 }
 .button:hover{
   opacity: 0.5;
@@ -66,4 +65,46 @@ button.button1{
   color: #668ad8;
   text-shadow: 0 0 5px white;
   background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+}
+#countdown{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+
+}
+#osirase{
+  display: inline-block;
+  vertical-align: middle;
+  width:600px;
+  height: 260px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: orange;
+  text-align:center;
+  margin: 10px;
+  padding: 2px;
+  color:orange;
+  background-color: #FFF;
+}
+.osirase{
+
+
+
+}
+.osirasedaimei{
+
+  font-size: 40px;
+
+}
+.osirasedaimei2{
+
+  font-size: 40px;
+  color:red;
+
+}
+.fontsize{
+  width: 80%;
+  background-color: #FFF;
+  font-size: 15px;
+  opacity: 0.7
 }
