@@ -27,6 +27,16 @@ body{
   padding: 10px;
   display: inline-block;
   width: 50%;
+  opacity:0.9;
+  border-right-style: dotted;
+  border-left-style: dotted;
+  border-width: 3px;
+  border-color: #FFF;
+  border-radius: 10px
+
+}
+.button:hover{
+  opacity: 0.5;
 }
 .daimei{
   font-size: 3.566vh !important;
@@ -36,6 +46,7 @@ body{
   width:80%;
   font-size:50px;
   background-color: #69E9D1;
+
 }
 #text-button {
   display: block;
@@ -49,7 +60,10 @@ button.button1{
   font-size: 4.266vw !important;
   font-size: 40px;
   display: inline-block;
-  background-color:#00EEE0;
-  color:#FFF;
   margin-top:10px;
+  border-left: solid 4px #668ad8;
+  border-right: solid 4px #668ad8;
+  color: #668ad8;
+  text-shadow: 0 0 5px white;
+  background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
 }
