@@ -1,0 +1,66 @@
+<html>
+<head>
+  <title>七つの子:アルト</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  </head>
+  <body>
+    <div align="ceneter">
+      <iframe id="sc-widget" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/611135100%3Fsecret_token%3Ds-gn06b&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      <br>
+      押したボタンの場所から再生が始まります。多少のズレは勘弁してください。
+      <button type="submit" class="button1"  onclick="syousetu1()">２段目(かわいい〜)</button>
+      <button type="submit" class="button1"  onclick="syousetu2()">３段目(かわい　かわいと)</button>
+      <button type="submit" class="button1"  onclick="syousetu3()">４段目(かわい　かわいと)</button>
+      <button type="submit" class="button1"  onclick="syousetu4()">右１段目(やまの)</button>
+      <button type="submit" class="button1"  onclick="syousetu5()">右２段目(まるい)</button>
+      <button type="submit" class="button1"  onclick="syousetu6()">最初から</button>
+
+      <script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        function syousetu1(){
+          var widget = SC.Widget(document.getElementById('sc-widget'));
+              widget.pause();
+              widget.seekTo(11900);
+              widget.play()
+              widget.setVolume(100)
+        };
+        function syousetu2(){
+          var widget = SC.Widget(document.getElementById('sc-widget'));
+              widget.pause();
+              widget.seekTo(23000);
+              widget.play()
+              widget.setVolume(100)
+        };
+        function syousetu3(){
+          var widget = SC.Widget(document.getElementById('sc-widget'));
+              widget.pause();
+              widget.seekTo(35000);
+              widget.play()
+              widget.setVolume(100)
+        };
+        function syousetu4(){
+          var widget = SC.Widget(document.getElementById('sc-widget'));
+              widget.pause();
+              widget.seekTo(47000);
+              widget.play()
+              widget.setVolume(100)
+        };
+        function syousetu5(){
+          var widget = SC.Widget(document.getElementById('sc-widget'));
+              widget.pause();
+              widget.seekTo(59000);
+              widget.play()
+              widget.setVolume(100)
+        };
+        function syousetu6(){
+          var widget = SC.Widget(document.getElementById('sc-widget'));
+              widget.pause();
+              widget.seekTo(0);
+              widget.play()
+              widget.setVolume(100)
+        };
+
+        </script>
+        </body>
+        </html>
