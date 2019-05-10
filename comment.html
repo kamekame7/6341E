@@ -1,0 +1,17 @@
+
+<html>
+<head>
+  </head>
+  <body>
+  <?php
+
+// 書き込みモードでファイルを開く
+$fp = fopen("fwrite.txt", "c");
+
+// ファイルに書き込む
+fwrite($fp, "write sample");
+
+// ファイルを閉じる
+fclose($fp);
+</body>
+</html>
