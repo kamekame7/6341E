@@ -1,17 +1,16 @@
 
+</html>
+<!DOCTYPE html>
 <html>
 <head>
-  </head>
-  <body>
-  <?php
-
-// 書き込みモードでファイルを開く
-$fp = fopen("fwrite.txt", "c");
-
-// ファイルに書き込む
-fwrite($fp, "write sample");
-
-// ファイルを閉じる
-fclose($fp);
+<meta charset='utf-8'>
+<title>HTML内でのPHPスクリプト - PHP入門</title>
+</head>
+<body>
+<h1><?php echo "タイトルだよ〜"; ?></h1>
+<?php
+$str_hello = "HTML内で";
+echo "<p> $str_hello PHPスクリプトを表示してみた</p>";
+?>
 </body>
 </html>
