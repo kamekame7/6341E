@@ -21,9 +21,20 @@
       <button type="submit" class="button1"  onclick="syousetu9()">2p右１段目（u-~）</button>
       <button type="submit" class="button1"  onclick="syousetu10()">2p２段目（おんがくを〜）</button>
       <button type="submit" class="button1"  onclick="syousetu0()">最初から</button>
+      <button type="submit" class="button1"  onclick="teishi()">停止</button>
+      <button type="submit" class="button1"  onclick="saisei()">再生</button>
 
       <script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
       <script type="text/javascript">
+      function teishi(){
+        var widget = SC.Widget(document.getElementById('sc-widget'));
+        widget.pause();
+
+      };
+      function saisei(){
+        var widget = SC.Widget(document.getElementById('sc-widget'));
+        widget.play();
+      };
       function syousetu0(){
         var widget = SC.Widget(document.getElementById('sc-widget'));
             widget.pause();
