@@ -1,0 +1,102 @@
+<html>
+<head>
+  <title>おんがく：同時再生練習</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  </head>
+  <body>
+    <div align="ceneter">
+      <div id="a">
+        <audio id="msc" controls loop>
+  　　　　<source src="music/soplano.mp3">
+        <source src="music/bass.mp3">
+        <source src="music/tenner.mp3">
+        <source src="music/alto.mp3">
+  　　　</audio>
+      <br>
+      押したボタンの場所から再生が始まります。多少のズレは勘弁してください。<br>
+      うまく再生されない時、「最初から」を押すか再読込をお願いします。<br>
+
+<div class="moji">
+      <form name="form1" action="">
+  <input id="bass" type="checkbox" class="checkbox" />バス<br />
+  <input type="range" id="range_bass" min="0" max="100" step="1" value="100" />
+ <span id="valuebass">100</span><br>
+  <input id="soplano" type="checkbox" class="checkbox" />ソプラノ<br />
+  <input type="range" id="range_soplano" min="0" max="100" step="1" value="100" />
+ <span id="valuesoplano">100</span><br>
+  <input id="tenner" type="checkbox" class="checkbox" />テナー<br />
+  <input type="range" id="range_tenner" min="0" max="100" step="1" value="100" />
+ <span id="valuetenner">100</span><br>
+  <input id="alto" type="checkbox" class="checkbox" />アルト<br />
+  <input type="range" id="range_alto" min="0" max="100" step="1" value="100" />
+ <span id="valuealto">100</span><br>
+  </form>
+  </div>
+
+      <button type="submit" class="button1"  onclick="fadein()">スタート</button>
+
+      <script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        var elem1 = document.getElementById('range_bass');
+        var target1 = document.getElementById('valuebass');
+        var rangeValue = function (elem1, target1) {
+          return function(evt){
+            target1.innerHTML = elem1.value;
+          }
+        }
+        elem1.addEventListener('input', rangeValue(elem1, target1));
+        var elem2 = document.getElementById('range_soplano');
+        var target2 = document.getElementById('valuesoplano');
+        var rangeValue = function (elem2, target2) {
+          return function(evt){
+            target2.innerHTML = elem2.value;
+          }
+        }
+        elem2.addEventListener('input', rangeValue(elem2, target2));
+        var elem3 = document.getElementById('range_tenner');
+        var target3 = document.getElementById('valuetenner');
+        var rangeValue = function (elem3, target3) {
+          return function(evt){
+            target3.innerHTML = elem3.value;
+          }
+        }
+        elem3.addEventListener('input', rangeValue(elem3, target3));
+        var elem4 = document.getElementById('range_alto');
+        var target4 = document.getElementById('valuealto');
+        var rangeValue = function (elem4, target4) {
+          return function(evt){
+            target4.innerHTML = elem4.value;
+          }
+        }
+        elem4.addEventListener('input', rangeValue(elem4, target4));
+        var widget1 = SC.Widget(document.getElementById('sc-bass'));
+        var widget2 = SC.Widget(document.getElementById('sc-soplano'));
+        function start(){
+
+
+              widget1.play()
+              widget1.setVolume(100)
+
+
+                  widget2.play()
+                  widget2.setVolume(100)
+
+        };
+        var media = document.getElementById("msc");
+
+//フェードイン関数 ▼
+function fadein()
+{
+  var vl = media.volume;
+  if (vl < 1.0)
+  {
+    media.volume = Math.ceil((vl+0.1)*10)/10;
+    setTimeout("fadein()",200);
+  }
+}
+
+        </script>
+    </div>
+    </body>
+    </html>

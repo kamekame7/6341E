@@ -104,6 +104,21 @@ body{
   border-color: #FFF;
   border-radius: 10px
 }
+.button1{
+  color:#000;
+  text-decoration: none;
+  font-size: 4.266vh !important;
+  font-size: 40px;
+  padding: 10px;
+  display: inline-block;
+  width: 50%;
+  opacity:0.9;
+  border-right-style: dotted;
+  border-left-style: dotted;
+  border-width: 3px;
+  border-color: #FFF;
+  border-radius: 10px
+}
 .button3{
   color:#FFF;
   text-decoration: none;
