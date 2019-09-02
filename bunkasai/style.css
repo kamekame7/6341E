@@ -13,6 +13,7 @@ background: #FFF;
 z-index: 1;
 }
 body {
+
   /* 画像ファイルの指定 */
   background-image: url(img/bgimg.png);
 
@@ -60,6 +61,7 @@ margin-top: 20%;
 
 }
 #link{
+  overflow: hidden;
   position: absolute;
   top: 20vh;
   left: 10vw;
@@ -102,6 +104,7 @@ margin-top: 20%;
   background-color: grey;
   color: #FFF;
   font-size: 30px;
+  margin:0;
 }
 .buttonimg{
   width: 100%;
