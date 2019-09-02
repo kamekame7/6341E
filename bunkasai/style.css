@@ -14,7 +14,7 @@ z-index: 1;
 }
 body {
   /* 画像ファイルの指定 */
-  background-image: url(img/bgimg.jpg);
+  background-image: url(img/bgimg.png);
 
   /* 画像を常に天地左右の中央に配置 */
   background-position: center center;
@@ -36,20 +36,32 @@ text-align: center;
 margin-top: 20%;
 }
 #head{
-  width:100ew;
-  height:100wh;
-}
-.logo{
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: 0px;
-  bottom: 0px;
   left: 0px;
-  margin: auto;
+  width:100vw;
+  height:20vh;
+  background-color: #FFF;
+  opacity: 0.9;
+  z-index: -1;
+
+}
+.logo{
+  height: 80%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  margin:auto;
+
+
+
 }
 #link{
   position: absolute;
-  top: 100vh;
+  top: 20vh;
   left: 10vw;
   width:80vw;
 
@@ -75,9 +87,22 @@ margin-top: 20%;
 }
 .rocket{
   position: absolute;
-  
+
   right: 0px;
   bottom: 10px;
   left: 0px;
   margin: auto;
+}
+#end{
+  width: 100vw;
+  height: 100px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  background-color: grey;
+  color: #FFF;
+  font-size: 30px;
+}
+.buttonimg{
+  width: 100%;
 }
