@@ -61,7 +61,8 @@ margin-top: 20%;
 
 }
 #link{
-  overflow: hidden;
+
+
   position: absolute;
   top: 20vh;
   left: 10vw;
@@ -70,7 +71,7 @@ margin-top: 20%;
 
 }
 .link{
-  display: inline-block;
+
   width: 100%;
   font-size: 50px;
   color:#FFF;
@@ -79,9 +80,10 @@ margin-top: 20%;
   border-width: 2px;
   text-decoration: none;
 
+
 }
 .text{
-  display: inline-block;
+  
   width: 100%;
   font-size: 50px;
   color:#FFF;
@@ -95,6 +97,13 @@ margin-top: 20%;
   left: 0px;
   margin: auto;
 }
+.utyuuhikoushi{
+  position: fixed;
+  bottom: 90px;
+  height: 20vh;
+  right: 0;
+  z-index: 1;
+}
 #end{
   width: 100vw;
   height: 100px;
@@ -105,7 +114,15 @@ margin-top: 20%;
   color: #FFF;
   font-size: 30px;
   margin:0;
+  z-index: 2;
 }
 .buttonimg{
+  display: inline-block;
   width: 100%;
+  margin-top:60px;
+  z-index: -1;
+}
+.text2{
+  color: #FFF;
+  font-size:30px;
 }
