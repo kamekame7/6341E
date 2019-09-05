@@ -45,7 +45,7 @@ margin-top: 20%;
   height:20vh;
   background-color: #FFF;
   opacity: 0.9;
-  z-index: -1;
+  z-index: 1;
 
 }
 .logo{
@@ -83,9 +83,16 @@ margin-top: 20%;
 
 }
 .text{
-  
+
   width: 100%;
   font-size: 50px;
+  color:#FFF;
+
+}
+.text3{
+
+  width: 100%;
+  font-size: 40px;
   color:#FFF;
 
 }
@@ -124,5 +131,11 @@ margin-top: 20%;
 }
 .text2{
   color: #FFF;
-  font-size:30px;
+  font-size:35px;
+}
+.buttonimg2{
+  display: inline-block;
+  width: 100%;
+  margin-top:0px;
+  z-index: -1;
 }
