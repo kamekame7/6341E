@@ -92,8 +92,9 @@ margin-top: 20%;
 .text3{
 
   width: 100%;
-  font-size: 40px;
+  font-size: 38px;
   color:#FFF;
+  font-weight: bold;
 
 }
 .rocket{
@@ -126,7 +127,7 @@ margin-top: 20%;
 .buttonimg{
   display: inline-block;
   width: 100%;
-  margin-top:60px;
+  margin-top:30px;
   z-index: -1;
 }
 .text2{
@@ -135,7 +136,15 @@ margin-top: 20%;
 }
 .buttonimg2{
   display: inline-block;
-  width: 100%;
+  width: 80%;
   margin-top:0px;
   z-index: -1;
+}
+.gif{
+  width:25vw;
+  position: fixed;
+  bottom: 100px;
+  left:0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
