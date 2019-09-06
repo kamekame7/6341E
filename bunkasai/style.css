@@ -107,20 +107,20 @@ margin-top: 20%;
 }
 .utyuuhikoushi{
   position: fixed;
-  bottom: 90px;
+  bottom: 40px;
   height: 20vh;
   right: 0;
   z-index: 1;
 }
 #end{
   width: 100vw;
-  height: 100px;
+  height: 50px;
   position: fixed;
   bottom: 0px;
   right: 0px;
   background-color: grey;
   color: #FFF;
-  font-size: 30px;
+  font-size: 20px;
   margin:0;
   z-index: 2;
 }
@@ -143,7 +143,7 @@ margin-top: 20%;
 .gif{
   width:25vw;
   position: fixed;
-  bottom: 100px;
+  bottom: 50px;
   left:0;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
