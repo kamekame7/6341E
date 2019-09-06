@@ -21,7 +21,7 @@ body {
   background-position: center center;
 
   /* 画像をタイル状に繰り返し表示しない */
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 
   /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
   background-attachment: fixed;
@@ -30,7 +30,7 @@ body {
   background-size: cover;
 
   /* 背景画像が読み込まれる前に表示される背景のカラー */
-  background-color: #464646;
+  background-color: grey;
 }
 contents{
 text-align: center;
@@ -132,7 +132,7 @@ margin-top: 20%;
 }
 .text2{
   color: #FFF;
-  font-size:24px;
+  font-size:22px;
 }
 .buttonimg2{
   display: inline-block;
