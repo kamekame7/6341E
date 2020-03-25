@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TipsNote 地図カスタマイズt</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      #sample {
+        width: 700px;
+        height: 400px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="sample"></div>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('sample'), {
+          center: {
+            lat: 34.70194,
+            lng: 135.510025
+          },
+          zoom: 18,
+          styles: [
+            // ここに書き出されたJSONをペースト
+            {
+              "elementType": "geometry",
+              "stylers": [{
+                "color": "#e9f5f3"
+              }]
+            },
+            {
+              "elementType": "labels.icon",
+              "stylers": [{
+                "visibility": "off"
+              }]
+            },
+            {
+              "elementType": "labels.text.fill",
+              "stylers": [{
+                "color": "#616161"
+              }]
+            },
+            {
+              "elementType": "labels.text.stroke",
+              "stylers": [{
+                "color": "#f5f5f5"
+              }]
+            },
+            {
+              "featureType": "administrative.locality",
+              "stylers": [{
+                "visibility": "off"
+              }]
+            },
+            {
+              "featureType": "poi",
+              "elementType": "geometry",
+              "stylers": [{
+                "color": "#eeeeee"
+              }]
+            },
+            {
+              "featureType": "poi",
+              "elementType": "labels.text.fill",
+              "stylers": [{
+                "color": "#757575"
+              }]
+            },
+            {
+              "featureType": "poi.business",
+              "elementType": "geometry",
+              "stylers": [{
+                "visibility": "off"
+              }]
+            },
+            {
+              "featureType": "poi.business",
+              "elementType": "labels",
+              "stylers": [{
+                "visibility": "simplified"
+              }]
+            },
+            {
+              "featureType": "poi.business",
+              "elementType": "labels.icon",
+              "stylers": [{
+                "visibility": "simplified"
+              }]
+            },
+            {
+              "featureType": "poi.park",
+              "stylers": [{
+                "visibility": "simplified"
+              }]
+            },
+            {
+              "featureType": "poi.park",
+              "elementType": "geometry",
+              "stylers": [{
+                "color": "#bde3c7"
+              }]
+            },
+            {
+              "featureType": "poi.park",
+              "elementType": "labels.text.fill",
+              "stylers": [{
+                "visibility": "simplified"
+              }]
+            },
+            {
+              "featureType": "poi.park",
+              "elementType": "labels.text.stroke",
+              "stylers": [{
+                  "color": "#bffcff"
+                },
+                {
+                  "saturation": -25
+                },
+                {
+                  "visibility": "simplified"
+                },
+                {
+                  "weight": 4.5
+                }
+              ]
+            },
+            {
+              "featureType": "road",
+              "elementType": "geometry",
+              "stylers": [{
+                "color": "#ffffff"
+              }]
+            },
+            {
+              "featureType": "road.arterial",
+              "elementType": "labels",
+              "stylers": [{
+                "visibility": "off"
+              }]
+            },
+            {
+              "featureType": "road.arterial",
+              "elementType": "labels.text.fill",
+              "stylers": [{
+                "color": "#757575"
+              }]
+            },
+            {
+              "featureType": "road.highway",
+              "elementType": "geometry",
+              "stylers": [{
+                "color": "#dadada"
+              }]
+            },
+            {
+              "featureType": "road.highway",
+              "elementType": "labels",
+              "stylers": [{
+                "visibility": "off"
+              }]
+            },
+            {
+              "featureType": "road.highway",
+              "elementType": "labels.text.fill",
+              "stylers": [{
+                "color": "#616161"
+              }]
+            },
+            {
+              "featureType": "road.local",
+              "stylers": [{
+                "visibility": "off"
+              }]
+            },
+            {
+              "featureType": "road.local",
+              "elementType": "labels.text.fill",
+              "stylers": [{
+                "color": "#9e9e9e"
+              }]
+            },
+            {
+              "featureType": "transit.line",
+              "elementType": "geometry",
+              "stylers": [{
+                "color": "#e5e5e5"
+              }]
+            },
+            {
+              "featureType": "transit.station",
+              "elementType": "geometry",
+              "stylers": [{
+                "color": "#eeeeee"
+              }]
+            },
+            {
+              "featureType": "transit.station.bus",
+              "stylers": [{
+                "visibility": "on"
+              }]
+            },
+            {
+              "featureType": "transit.station.rail",
+              "stylers": [{
+                "visibility": "on"
+              }]
+            },
+            {
+              "featureType": "water",
+              "stylers": [{
+                  "color": "#61c6de"
+                },
+                {
+                  "visibility": "simplified"
+                }
+              ]
+            },
+            {
+              "featureType": "water",
+              "elementType": "geometry",
+              "stylers": [{
+                  "color": "#4bafc9"
+                },
+                {
+                  "visibility": "on"
+                }
+              ]
+            },
+            {
+              "featureType": "water",
+              "elementType": "geometry.fill",
+              "stylers": [{
+                "color": "#4bafc9"
+              }]
+            },
+            {
+              "featureType": "water",
+              "elementType": "labels.text.fill",
+              "stylers": [{
+                "color": "#9e9e9e"
+              }]
+            }
+          ]
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyC4WdNvtMvRaDsbJuh6u2o2xJX6USk69UU&center=35.69249058755678,139.49808769228005&zoom=12&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0x1d2c4d&style=element:labels.text.fill%7Ccolor:0x8ec3b9&style=element:labels.text.stroke%7Ccolor:0x1a3646&style=feature:administrative.country%7Celement:geometry.stroke%7Ccolor:0x4b6878&style=feature:administrative.land_parcel%7Celement:labels.text.fill%7Ccolor:0x64779e&style=feature:administrative.province%7Celement:geometry.stroke%7Ccolor:0x4b6878&style=feature:landscape.man_made%7Celement:geometry.stroke%7Ccolor:0x334e87&style=feature:landscape.natural%7Celement:geometry%7Ccolor:0x023e58&style=feature:poi%7Celement:geometry%7Ccolor:0x283d6a&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x6f9ba5&style=feature:poi%7Celement:labels.text.stroke%7Ccolor:0x1d2c4d&style=feature:poi.attraction%7Celement:labels.icon%7Cvisibility:off&style=feature:poi.attraction%7Celement:labels.text%7Cvisibility:off&style=feature:poi.business%7Cvisibility:off&style=feature:poi.government%7Cvisibility:off&style=feature:poi.medical%7Cvisibility:off&style=feature:poi.park%7Cvisibility:off&style=feature:poi.park%7Celement:geometry.fill%7Ccolor:0x023e58&style=feature:poi.park%7Celement:labels.icon%7Cvisibility:off&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x3C7680&style=feature:poi.place_of_worship%7Cvisibility:off&style=feature:poi.school%7Celement:labels.icon%7Csaturation:-100%7Cvisibility:on&style=feature:poi.sports_complex%7Cvisibility:off&style=feature:poi.sports_complex%7Celement:labels%7Cvisibility:off&style=feature:road%7Celement:geometry%7Ccolor:0x304a7d&style=feature:road%7Celement:labels%7Cvisibility:off&style=feature:road%7Celement:labels.text.fill%7Ccolor:0x98a5be&style=feature:road%7Celement:labels.text.stroke%7Ccolor:0x1d2c4d&style=feature:road.highway%7Celement:geometry%7Ccolor:0x2c6675&style=feature:road.highway%7Celement:geometry.stroke%7Ccolor:0x255763&style=feature:road.highway%7Celement:labels.text%7Cvisibility:off&style=feature:road.highway%7Celement:labels.text.fill%7Ccolor:0xb0d5ce&style=feature:road.highway%7Celement:labels.text.stroke%7Ccolor:0x023e58&style=feature:road.local%7Celement:labels.text%7Cvisibility:off&style=feature:transit%7Celement:labels.text.fill%7Ccolor:0x98a5be&style=feature:transit%7Celement:labels.text.stroke%7Ccolor:0x1d2c4d&style=feature:transit.line%7Celement:geometry.fill%7Ccolor:0x3a5a9d&style=feature:transit.station%7Celement:geometry%7Ccolor:0x3a4762&style=feature:transit.station.bus%7Cvisibility:off&style=feature:water%7Celement:geometry%7Ccolor:0x0e1626&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x4e6d70&size=480x360" async defer></script>
+  </body>
+
+</html>
