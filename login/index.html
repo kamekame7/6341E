@@ -6,7 +6,7 @@
   </head>
   <body>
   <div align="center">
-    むさしのいいところは？
+    パスワード
     <form name="form1" id="id_form1" action="">
   <input name="textBox1" id="id_textBox1" type="text" >
   <br>
@@ -31,8 +31,8 @@
         var pass=document.forms.id_form1.id_textBox1.value;
         var rame=document.forms.id_form1.ramen.value;
         var url="https://kamekame7.github.io/1E"+pass;
-        if (rame==1&&pass=="") {
-          location.href="https://kamekame7.github.io/1E";
+        if (rame==1) {
+          location.href=url;
         }else if(rame==2){
           alert("!?")
         }else{
