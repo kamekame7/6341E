@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title>パスワード</title>
   </head>
-  <body
+  <body>
   <div align="center">
-    Password
+    むさしのいいところは？
     <form name="form1" id="id_form1" action="">
   <input name="textBox1" id="id_textBox1" type="text" >
   <br>
@@ -30,9 +30,9 @@
       function onButtonClick() {
         var pass=document.forms.id_form1.id_textBox1.value;
         var rame=document.forms.id_form1.ramen.value;
-        var url="https://kamekame7.github.io/"+pass;
-        if (rame==1) {
-          location.href=url;
+        var url="https://kamekame7.github.io/1E"+pass;
+        if (rame==1&&pass=="") {
+          location.href="https://kamekame7.github.io/1E";
         }else if(rame==2){
           alert("!?")
         }else{
